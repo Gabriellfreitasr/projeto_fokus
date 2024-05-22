@@ -289,6 +289,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Para Celulares */
 @media (max-width: 767px) {
+
+    .app__section-banner-container {
+        padding-top: 6rem;
+        width: 99rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
     .app__section-banner-container {
         width: 32rem;
     }
@@ -299,5 +311,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .app__card-timer {
         font-size: 6rem;
+    }
+
+    body {
+        background: #000;
     }
 }
