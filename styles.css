@@ -41,13 +41,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Unbounded', cursive;
 }
 
-.app__logo-figure {
-    display: flex;
-    justify-content: center;
-    padding: 4rem 0;
-}
-
 .app__section-banner-container {
+    padding-top: 4rem;
     width: 99rem;
     margin: 0 auto;
     display: flex;
@@ -59,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__title {
     line-height: 150%;
-    font-size: 5.2rem;
+    font-size: 5.2em;
     font-style: normal;
     color: var(--color-secondary);
     font-weight: 200;
@@ -119,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-secondary);
     text-align: center;
     font-family: Unbounded;
-    font-size: 12rem;
+    font-size: 8rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -160,6 +155,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__footer {
     display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 2.8rem 6rem;
     justify-content: center;
@@ -233,6 +232,54 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) and (min-width: 768px) {
     .app__section-banner-container {
         width: 48rem;
+    }
+
+    .app__title {
+        line-height: 150%;
+        font-size: 5.2em;
+        font-style: normal;
+        color: var(--color-secondary);
+        font-weight: 200;
+        max-width: 46rem;
+    }
+}
+
+/* Modelos menores */
+@media (min-width: 1024px) {
+   
+    .app__title {
+        line-height: 150%;
+        font-size: 4.2em;
+        font-style: normal;
+        color: var(--color-secondary);
+        font-weight: 200;
+        max-width: 46rem;
+    }
+
+    .app__image {
+        width: 70%;
+    }
+
+    .app__card {
+        border-radius: 3.2rem;
+        border: 0.2rem solid var(--azul-royal);
+        background: var(--fundo-card-timer);
+        padding: 2.4rem;
+        margin: 2rem 0;
+        width: 59rem;
+        max-width: 100%;
+    }
+
+    .app__card-timer {
+        color: var(--color-secondary);
+        text-align: center;
+        font-family: Unbounded;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 3.2rem;
+        text-align: center;
     }
 }
 
