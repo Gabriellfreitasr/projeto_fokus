@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__section-banner-container {
-    padding-top: 4rem;
+    padding-top: 6rem;
     width: 99rem;
     margin: 0 auto;
     display: flex;
@@ -228,28 +228,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* fim - toggle */
 
-/* Para Tablets */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .app__section-banner-container {
-        width: 48rem;
-    }
-
-    .app__title {
-        line-height: 150%;
-        font-size: 5.2em;
-        font-style: normal;
-        color: var(--color-secondary);
-        font-weight: 200;
-        max-width: 46rem;
-    }
-}
-
 /* Modelos menores */
-@media (min-width: 1024px) {
+@media (max-width: 1800px) and (min-width: 1025px) {
    
     .app__title {
         line-height: 150%;
-        font-size: 4.2em;
+        font-size: 4em;
         font-style: normal;
         color: var(--color-secondary);
         font-weight: 200;
@@ -257,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .app__image {
-        width: 70%;
+        width: 65%;
     }
 
     .app__card {
@@ -274,12 +258,32 @@ h1, h2, h3, h4, h5, h6 {
         color: var(--color-secondary);
         text-align: center;
         font-family: Unbounded;
-        font-size: 6rem;
+        font-size: 5rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin: 3.2rem;
+        margin: 1.8rem;
         text-align: center;
+    }
+
+    .app__section-banner-container {
+        padding-top: 1.5rem;
+    }
+}
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .app__section-banner-container {
+        width: 48rem;
+    }
+
+    .app__title {
+        line-height: 150%;
+        font-size: 5.2em;
+        font-style: normal;
+        color: var(--color-secondary);
+        font-weight: 200;
+        max-width: 46rem;
     }
 }
 
